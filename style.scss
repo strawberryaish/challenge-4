@@ -56,8 +56,7 @@ body {
     background-color: var(--white);
     max-width: 80rem;
     border-radius: 25px;
-    
-   
+    transition: all 0.3s ease;
 }
 
 .form-box {
@@ -108,7 +107,12 @@ body {
             border-radius: 8px;
             width: 100%;
             margin-bottom: var(--bg-size-2);
+            cursor: pointer;
 
+            &:hover {
+                background: linear-gradient(to right,#ff6e7f  0%, hsl(4, 100%, 67%)   51%,  hsl(4, 100%, 67%) 100%);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+            }
         }
 
         .email-label {
@@ -117,7 +121,6 @@ body {
             font-weight: 600;
             display: block;
             margin-bottom: var(--sm-size-4);
-
 
         }
 
@@ -146,7 +149,6 @@ body {
 }
 
 .success-container {
-    display: none;
     background-color: var(--white);
     max-width: 50rem;
     border-radius: 25px;
@@ -155,6 +157,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 
     .icon {
         margin-bottom: var(--bg-size-2);
@@ -200,9 +203,12 @@ body {
     }
 
     
-
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 .attribution {
