@@ -19,6 +19,8 @@
   --dark-grey: hsl(234, 29%, 20%);
   --light-grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
+  --rgba-green: rgba(130, 239, 130, 0.318);
+  --rgba-red: rgba(246, 85, 85, 0.318);
   --xbg-size-1: 5rem;
   --bg-size-1: 4rem;
   --bg-size-2: 2.8rem;
@@ -51,6 +53,13 @@ body {
   max-width: 80rem;
   border-radius: 25px;
   transition: all 0.3s ease;
+}
+.container .validation-container {
+  display: flex;
+}
+.container .validation-container .validation {
+  font-size: var(--sm-size-2);
+  margin-left: auto;
 }
 
 .form-box {
@@ -115,6 +124,7 @@ body {
   border: none;
   border: 1px solid rgba(128, 128, 128, 0.227);
   border-radius: 8px;
+  outline: none;
 }
 
 .img-box {
