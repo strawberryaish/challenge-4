@@ -35,10 +35,10 @@ return check.test(email);
 //Event handlers
 form.addEventListener('submit', e => {
     e.preventDefault();
-    !checkEmail(emailID.value) ? error() : success(emailID.value), (popupContainer.classList.remove('hidden'), 
-    signupContainer.classList.add('hidden'));
+   
+    !checkEmail(emailID.value) ? error() : (success(emailID.value), popupContainer.classList.remove('hidden'), signupContainer.classList.add('hidden')) ;
 
-});
+})
 
 emailID.addEventListener('keyup', () => {
     !checkEmail(emailID.value) ? error() : success(emailID.value);
